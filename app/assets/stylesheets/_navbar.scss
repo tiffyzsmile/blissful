@@ -1,0 +1,99 @@
+.b-nav {
+  color: $b-navbar-font-color;
+  background-color: $b-primary-color;
+  width: 100%;
+  overflow: hidden;
+
+  a { color: $b-navbar-font-color; }
+
+  .b-logo {
+    color: $b-navbar-font-color;
+    display: block;
+    float: left;
+    font-size: $b-navbar-brand-font-size;
+    padding: 0 $b-padding;
+  }
+
+
+  // Navbar Links
+  ul {
+    margin: 0;
+
+    li {
+      transition: background-color .3s;
+      float: left;
+      padding: 0;
+
+      &.active, &:hover  {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    a {
+      transition: background-color .3s;
+      font-size: 1rem;
+      color: $b-navbar-font-color;
+      display: block;
+      padding: 0 $b-padding;
+      &:hover {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+
+  // Navbar Search Form
+  .input-field {
+    margin: 0;
+
+    input {
+      height: 100%;
+      font-size: 1.2rem;
+      border: none;
+      padding-left: 2rem;
+
+      &:focus, &[type=text]:valid, &[type=password]:valid,
+      &[type=email]:valid, &[type=url]:valid, &[type=date]:valid {
+        border: none;
+        box-shadow: none;
+      }
+    }
+    label {
+      top: 0;
+      left: 0;
+
+      i {
+        color: rgba(255,255,255,.7);
+        transition: color .3s;
+      }
+      &.active i { color: $navbar-font-color; }
+      &.active {
+        transform: translateY(0);
+      }
+    }
+
+  }
+
+}
+
+// Fixed Navbar
+.navbar-fixed {
+  position: relative;
+  height: $navbar-height-mobile;
+  z-index: 998;
+
+  nav {
+    position: fixed;
+  }
+}
+@media #{$medium-and-up} {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: $navbar-height;
+    line-height: $navbar-height;
+  }
+  .navbar-fixed {
+    height: $navbar-height;
+  }
+}

@@ -1,0 +1,62 @@
+/********** Colors **********/
+$bg:        rgb(255,255,255); //main bg of site
+$text:      rgb(67,67,67); //main gray font
+$highlight: rgb(0,99,186);
+$accent:    rgb(230,230,230);
+$border:    rgb(204,204,204);
+
+$success:   rgb(0,146,69);
+$warning:   rgb(219,141,5);
+$important: rgb(211,23,23);
+
+
+/********** Other Variables **********/
+//when changing font, change the trademark mixin position
+$font-stack:   "proxima-nova-alt", Helvetica, Helmet, Freesans, sans-serif;
+$font-heading: "jaf-bernino-sans-condensed", "Helvetica Neue", Helvetica, Helmet, Freesans, sans-serif;
+$pad:          15px;
+$line-height:  20px;
+
+
+
+///*** Padding ***/
+
+$b-padding: 15px;
+$b-padding-less: 7.5px;
+$b-padding-more: 30px;
+
+///*** Colors ***/
+$b-background-light: #ffebee;
+$b-background-dark: #d50000;
+
+$b-primary-color: #e57373;
+$b-primary-color-light: #ef5350;
+$b-primary-color-dark: #b71c1c;
+//
+$b-secondary-color: #00bcd4;
+//$success-color: color("green", "base") !default;
+//$error-color: color("red", "base") !default;
+//$link-color: color("light-blue", "darken-1") !default;
+//
+//
+///*** Dropdown ***/
+$b-dropdown-bg-color: #fff !default;
+$b-dropdown-hover-bg-color: #eee !default;
+$b-dropdown-color: $b-secondary-color !default;
+$b-dropdown-item-height: 50px !default;
+
+/*** Navbar ***/
+$b-navbar-font-color: #fff;
+$b-navbar-brand-font-size: 2.1rem !default;
+
+
+/*** Typography ***/
+$b-off-black: rgba(0, 0, 0, 0.87) !default;
+
+// Header Styles
+$b-h1-fontsize: 4.2rem !default;
+$b-h2-fontsize: 3.56rem !default;
+$b-h3-fontsize: 2.92rem !default;
+$b-h4-fontsize: 2.28rem !default;
+$b-h5-fontsize: 1.64rem !default;
+$b-h6-fontsize: 1rem !default;

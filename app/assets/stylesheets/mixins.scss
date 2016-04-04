@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "variables";
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group Mixins
+/// @author Tiffany May
+////
+
+// for doc instructions: http://sassdoc.com/
+
+
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
