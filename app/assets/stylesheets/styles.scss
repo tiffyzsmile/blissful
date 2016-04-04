@@ -1,43 +1,11 @@
 @import "mixins";
 @import "materialize";
 @import "variables";
+@import "_grid";
 @import "_navbar";
 
 
-
-html {
-	color: darkslategray;
-	background-color: #fffefd;
-}
-
-body {
-	padding-top: 3rem;
-}
-
-.purchased-fals {
-	height: 40px;
-	background-color: red;
-}
-
-.purchased-true {
-	height: 40px;
-	background-color: green;
-}
-
-.strikethrough {
-	text-decoration: line-through;
-	color: slategray;
-}
-
-h1 {
-	text-decoration: underline;
-	text-decoration-style: wavy;
-}
-
-
 a {cursor: pointer;}
-
-
 
 
 

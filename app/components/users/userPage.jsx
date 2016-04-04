@@ -35,7 +35,7 @@ var UserPage = React.createClass({
 		return (
 			<div>
 				<h1>Users</h1>
-				<a onClick={() => this.props.history.pushState(null, '/addUser') } className="btn btn-default">Add User</a>
+				<Link to="addUser" className="btn btn-default">Add User</Link>
 				<UserList users={this.state.users} />
 			</div>
 		);

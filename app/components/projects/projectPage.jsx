@@ -31,7 +31,7 @@ var ProjectPage = React.createClass({
 		return (
 			<div>
 				<h1>Projects</h1>
-				<a onClick={() => this.props.history.pushState(null, '/addProject') } className="btn btn-default">Add Project</a>
+				<Link to="addProject" className="btn btn-default">Add Project</Link>
 				<ProjectList projects={this.state.projects} />
 			</div>
 		);

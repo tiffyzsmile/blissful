@@ -17,12 +17,12 @@ var routes = (
         <DefaultRoute handler={Homepage} />
             
         <Route name="users" handler={require('./components/users/userPage.jsx')} />
-        <Route name="addUser" path="users" handler={require('./components/users/manageUserPage.jsx')} />
+        <Route name="addUser" path="users/new" handler={require('./components/users/manageUserPage.jsx')} />
         <Route name="manageUser" path="users/:id" handler={require('./components/users/manageUserPage.jsx')} />
 
 
         <Route name="projects" handler={require('./components/projects/projectPage.jsx')} />
-        <Route name="addProject" path="project" handler={require('./components/projects/manageProjectPage.jsx')} />
+        <Route name="addProject" path="projects/new" handler={require('./components/projects/manageProjectPage.jsx')} />
         <Route name="manageProject" path="project/:id" handler={require('./components/projects/manageProjectPage.jsx')} />
 
 
