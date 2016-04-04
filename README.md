@@ -1,4 +1,4 @@
-# blissful
+# blissful 1.0.0
 
 blissful application. An application for doing awesome things.
 
