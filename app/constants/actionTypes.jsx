@@ -1,0 +1,8 @@
+"use strict";
+
+module.exports = {
+	INITIALIZE: "INITIALIZE",
+	CREATE_USER: "CREATE_USER",
+	UPDATE_USER: "UPDATE_USER",
+	DELETE_USER: "DELETE_USER"
+};
